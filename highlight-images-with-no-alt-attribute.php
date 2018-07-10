@@ -24,19 +24,19 @@ defined( 'ABSPATH' ) or die();
 
 
 
-if ( ! defined( 'HIWNAI_PLUGIN_PATH' ) )
-	define( 'HIWNAI_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
+if ( ! defined( 'HIWNAA_PLUGIN_PATH' ) )
+	define( 'HIWNAA_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
 
-if ( ! defined( 'HIWNAI_PLUGIN_DIR' ) )
-	define( 'HIWNAI_PLUGIN_DIR', plugin_dir_url( __FILE__ ) );
-
-
-
-$hiwnai = new hiwnai();
+if ( ! defined( 'HIWNAA_PLUGIN_DIR' ) )
+	define( 'HIWNAA_PLUGIN_DIR', plugin_dir_url( __FILE__ ) );
 
 
 
-class hiwnai {
+$hiwnaa = new hiwnaa();
+
+
+
+class hiwnaa {
 
 
 
@@ -53,21 +53,21 @@ class hiwnai {
 		if ( ! is_user_logged_in() )
 			return;
 
-		if ( ! current_user_can( apply_filters( 'hiwnai_user_cap', 'manage_options' ) ) )
+		if ( ! current_user_can( apply_filters( 'hiwnaa_user_cap', 'manage_options' ) ) )
 			return;
 
-		$name     = 'hiwnai';
+		$name     = 'hiwnaa';
 		$filename = 'assets/' . $name . '.css';
 
 		wp_enqueue_style(
 			$name,
-			HIWNAI_PLUGIN_DIR . $filename,
+			HIWNAA_PLUGIN_DIR . $filename,
 			null,
-			filemtime( HIWNAI_PLUGIN_PATH . $filename )
+			filemtime( HIWNAA_PLUGIN_PATH . $filename )
 		);
 
 	}
 
 
 
-} // class hiwnai
+} // class hiwnaa

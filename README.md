@@ -19,7 +19,7 @@ If you view the source code of a website, the HTML tags for images will look som
 
 `<img src="sunset.jpg" alt="A photograph of sunset over the desert">`
 
-The `alt="..."` bit is the alt tag. The text inside the double quotes will be read out by screen readers to visually impaired and blind users. Without it, they have no know way of knowing what the image is or what it represents.
+The `alt="..."` bit is the alt tag. The text inside the double quotes will be read out by screen readers to visually impaired and blind users. Without it, they have no no way of knowing what the image is or what it represents.
 
 Missing alt tags will also cause your website to fail various accessibility standards.
 
@@ -46,9 +46,9 @@ Don't worry, only users with the `manage_options` capability will see the highli
 Yes. For example, the following code shows how to change the capability to `edit_posts`. You should add this code to the functions.php file in your active theme:
 
 ```
-add_filter( 'hiwnai_user_cap', 'change_the_hiwnai_user_cap' );
+add_filter( 'hiwnaa_user_cap', 'change_the_hiwnaa_user_cap' );
 
-function change_the_hiwnai_user_cap( $cap ) {
+function change_the_hiwnaa_user_cap( $cap ) {
 	return 'edit_posts';
 }
 ```
