@@ -1,3 +1,5 @@
+[![License](https://img.shields.io/badge/license-GPL_v2%2B-blue.svg?style=flat-square)](http://opensource.org/licenses/GPL-2.0)
+
 # Highlight Images With No Alt Attribute #
 
 A WordPress accessibility plugin to highlight images on your website that are missing the alt attribute.
