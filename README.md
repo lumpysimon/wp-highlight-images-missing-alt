@@ -11,7 +11,7 @@ A WordPress accessibility plugin to highlight images on your website that are mi
 
 ## Description ##
 
-Every image on your website should have an alt tag. Alt tags are a crucial accessibility feature used by screen readers to describe the image to visually impaired and blind users. This plugin will highlight all images that do not have an alt tag by adding a bright red, dashed border to them.
+Every image on your website should have an alt tag (technically speaking, it's an alt attribute, but it's commonly known as alt tag). Alt tags are a crucial accessibility feature used by screen readers to describe the image to visually impaired and blind users. This plugin will highlight all images that do not have an alt tag by adding a bright red, dashed border to them.
 
 ## Frequently Asked Questions ##
 
