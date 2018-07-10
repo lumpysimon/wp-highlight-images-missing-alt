@@ -3,8 +3,8 @@
 A WordPress accessibility plugin to highlight images on your website that are missing the alt attribute.
 
  * **Author:** Simon Blackbourn
- * **Author URI:** [simonblackbourn.net](https://simonblackbourn.net)
- * **Tags:** accessibility, images, alt, tools, screen readers
+ * **Author URI:** [simonblackbourn.net](https://simonblackbourn.net) and [lumpylemon.co.uk](https://lumpylemon.co.uk)
+ * **Tags:** accessibility, images, alt text, tools, screen readers
  * **License:** GPLv2 or later
 
 ## Description ##
@@ -33,17 +33,17 @@ You - or your developer or theme author - will need to edit the file containing 
 
 ### Can I omit the alt tag if an image is purely for design purposes? ###
 
-No, these kind of images still need one, but you should leave it empty:
+No, these kind of images still need one, but it should be empty:
 
 `<img src="image.png" alt="">`
 
 ### Argh! I don't want my visitors to see bright red dashed borders round my images! ###
 
-Don't worry, only users with the `manage_options` capability will see the highlighting.
+Don't worry, only logged in users with the `manage_options` capability will see the highlighting.
 
 ### Can I make the highlighting visible to users with a different capability? ###
 
-Yes. For example, the following code shows how to change the capability to `edit_posts`. You should add this code to the functions.php file in your active theme:
+Yes. For example, the following code changes the required capability to `edit_posts`. Place this code in the `functions.php` file in your active theme:
 
 ```
 add_filter( 'hiwnaa_user_cap', 'change_the_hiwnaa_user_cap' );
